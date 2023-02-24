@@ -28,3 +28,10 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 -- Search and replace the word that you're on
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>")
 -- vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true }) -- Makes files executable
+
+
+-- Nvim tree remaps. Move into the dedicated .lua later
+vim.keymap.set("n", "<leader>nvr", vim.cmd.NvimTreeRefresh)
+vim.keymap.set("n", "<leader>nvs", "<cmd>NvimTreeResize 40<CR>")
+vim.keymap.set("n", "<leader>nvx", vim.cmd.NvimTreeClose)
+
