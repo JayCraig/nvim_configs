@@ -55,6 +55,17 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  end)
+  -- Nvim-orgmode
+  use {'Nvim-orgmode/orgmode', config = function()
+      require('orgmode').setup()
+  end
+  }
+
+
+  -- Nvim tree to replace netrw. Finish setting up later
+  -- There's some extra lines on git for icons and the nightly build
+  use {'nvim-tree/nvim-tree.lua'}
+
+  end) -- Don't put anything after this
 
 
