@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "help", "norg", "c", "lua", "rust" },
+  ensure_installed = { "vimdoc", "vim", "norg", "c", "lua", "rust" },
   -- add bibtex, latex, and bash later. Website lists the other supported
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
