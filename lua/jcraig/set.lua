@@ -9,6 +9,7 @@ o.shiftwidth = 4
 o.expandtab = true
 o.incsearch = true
 o.hlsearch = false
+o.textwidth = 80
 
 o.smartindent = true
 
