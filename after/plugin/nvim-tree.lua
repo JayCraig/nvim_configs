@@ -89,8 +89,14 @@ require("nvim-tree").setup({
     hijack_cursor = true,
     view = {
         adaptive_size = true,
+        width = 20,
     },
 renderer = {
     group_empty = true,
+},
+actions = {
+    open_file = {
+        resize_window = true
+    }
 },
 })
