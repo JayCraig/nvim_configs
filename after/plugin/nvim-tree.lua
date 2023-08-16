@@ -88,15 +88,53 @@ require("nvim-tree").setup({
     sort_by = "name",
     hijack_cursor = true,
     view = {
-        adaptive_size = true,
-        width = 20,
+        adaptive_size = false,
+        width = 25,
+        mappings = { -- not currently working for files in git repos
+            custom_only = true,
+            list = {
+                { key = { ".lua" }, icon = "" },
+            },
+        },
     },
-renderer = {
-    group_empty = true,
-},
-actions = {
-    open_file = {
-        resize_window = true
-    }
-},
-})
+    renderer = {
+        group_empty = true,
+        icons = {
+            webdev_colors = true,
+            show = {
+                file = true,
+                folder = true,
+                folder_arrow = false,
+                git = true,
+                modified = true,
+            },
+            glyphs = {
+                default = "",
+                folder = {
+                    arrow_closed = "󰜴",
+                    arrow_open = "󰜮",
+                    default = "",
+                    open = "",
+                    empty = "",
+                    empty_open = "",
+                },
+                git = {
+                    unstaged = "✗",
+                    staged = "✓",
+                    renamed = "➜",
+                    untracked = "★",
+                    deleted = "",
+                    ignored = "◌",
+                },
+            },
+        },
+    },
+        actions = {
+            open_file = {
+                resize_window = true
+            }
+        },
+        filters = {
+            git_ignored = false,
+        },
+    }) -- end of setup

@@ -10,12 +10,16 @@ o.expandtab = true
 o.incsearch = true
 o.hlsearch = false
 o.textwidth = 80
+o.hidden = true
+o.confirm = true
 
 o.smartindent = true
 
 o.wrap = true
 
 o.termguicolors = true -- figure out what this does at some point
+-- o.background = ""
+
 
 o.scrolloff = 8
 o.signcolumn = "yes"

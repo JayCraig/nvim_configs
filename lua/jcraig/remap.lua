@@ -7,13 +7,21 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv")
 
 -- Remaps for controlling windows
-vim.keymap.set("n","<leader>wv","<C-w>v") -- split vertical
-vim.keymap.set("n","<leader>ws","<C-w>s") -- split horizontal
-vim.keymap.set("n","<leader>wk","<C-w>k") -- Move to window above
-vim.keymap.set("n","<leader>wj","<C-w>j") -- Move to window below
-vim.keymap.set("n","<leader>wh","<C-w>h") -- Move to window left
-vim.keymap.set("n","<leader>wl","<C-w>l") -- Move to window right
-vim.keymap.set("n","<leader>wq","<C-w>q") -- Close current window
+vim.keymap.set("n", "<leader>wv", "<C-w>v") -- split vertical
+vim.keymap.set("n", "<leader>ws", "<C-w>s") -- split horizontal
+vim.keymap.set("n", "<leader>wk", "<C-w>k") -- Move to window above
+vim.keymap.set("n", "<leader>wj", "<C-w>j") -- Move to window below
+vim.keymap.set("n", "<leader>wh", "<C-w>h") -- Move to window left
+vim.keymap.set("n", "<leader>wl", "<C-w>l") -- Move to window right
+vim.keymap.set("n", "<leader>wq", "<C-w>q") -- Close current window
+
+-- Buffer controls
+vim.keymap.set("n", "<leader>bb", vim.cmd.buffers) -- list buffers
+vim.keymap.set("n", "<leader>bd", vim.cmd.bd) -- kills current buffer
+vim.keymap.set("n", "<leader>bn", vim.cmd.bn) -- cycle next buffer
+vim.keymap.set("n", "<leader>bp", vim.cmd.bp) -- cycle prev buffer
+vim.keymap.set("n", "<leader>bc", ":buffers<CR>:buffer<Space>")
+
 
 -- Allows C-d and C-u to keep the cursor in the middle of the screen
 vim.keymap.set("n", "<C-d>", "<C-d>zz")

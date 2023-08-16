@@ -1,3 +1,5 @@
 nvim-tree-on-attach.lua
 
 clip.lua
+
+packer_compiled.lua

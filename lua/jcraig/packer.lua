@@ -64,7 +64,11 @@ return require('packer').startup(function(use)
 
   -- Nvim tree to replace netrw. Finish setting up later
   -- There's some extra lines on git for icons and the nightly build
-  use {'nvim-tree/nvim-tree.lua'}
+  use {'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons',
+   },
+  }
 
   end) -- Don't put anything after this
 
